@@ -291,19 +291,26 @@ nav.scrolled {
     box-shadow: 0 0 10px var(--accent-glow);
 }
 
+.timeline-content {
+    position: relative;
+    padding-left: 120px;
+}
+
 .timeline-logo-container {
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    margin-bottom: 1.5rem;
 }
 
 .timeline-logo {
-    height: 60px;
-    max-width: 150px;
+    height: 40px;
+    max-width: 90px;
     object-fit: contain;
-    opacity: 0.85;
+    opacity: 0.7;
     transition: opacity var(--transition-normal);
     filter: brightness(1.1);
 }
@@ -319,11 +326,6 @@ nav.scrolled {
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 0.5rem;
-}
-
-.timeline-header h3 {
-    font-size: 1.3rem;
-    color: #fff;
 }
 
 .timeline-date {
@@ -608,9 +610,19 @@ footer {
         gap: 0.5rem;
     }
     
+    .timeline-content {
+        padding-left: 0;
+    }
+    
+    .timeline-logo-container {
+        position: static;
+        transform: none;
+        margin-bottom: 1rem;
+    }
+    
     .timeline-logo {
-        height: 50px;
-        max-width: 120px;
+        height: 35px;
+        max-width: 75px;
     }
     
     .footer-content {
