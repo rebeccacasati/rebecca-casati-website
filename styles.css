@@ -252,6 +252,10 @@ nav.scrolled {
     transform: translateY(-3px);
 }
 
+.social-links a:hover .fa-orcid {
+    color: #BACE59;
+}
+
 .location {
     font-family: var(--font-mono);
     color: var(--text-muted);
