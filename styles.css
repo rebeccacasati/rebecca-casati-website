@@ -451,6 +451,15 @@ nav.scrolled {
     margin-bottom: 0.5rem;
     color: var(--text-main);
 }
+
+.outline-card .timeline-header {
+    margin-bottom: 0.75rem;
+}
+
+.outline-card .timeline-header h4 {
+    margin-bottom: 0;
+}
+
 .outline-card p {
     color: var(--text-muted);
     font-size: 0.95rem;
@@ -461,7 +470,7 @@ nav.scrolled {
 
 .outline-card .timeline-date {
     display: inline-block;
-    margin-top: 0.75rem;
+    margin-top: 0;
 }
 
 /* --- Publications List --- */
