@@ -236,19 +236,40 @@ nav.scrolled {
 
 .summary-list {
     margin: 0.75rem 0 0;
-    padding-left: 2em;
+    padding-left: 0;
+    list-style: none;
     color: inherit;
+}
+
+.summary-list li {
+    position: relative;
+    padding-left: 2.5em;
 }
 
 .summary-list li + li {
     margin-top: 0.35rem;
 }
 
+.summary-list li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "\2022";
+}
+
 .summary-list li:first-child {
     color: var(--accent-purple);
 }
 
+.summary-list li:first-child::before {
+    color: var(--accent-purple);
+}
+
 .summary-list li:last-child {
+    color: var(--accent-blue);
+}
+
+.summary-list li:last-child::before {
     color: var(--accent-blue);
 }
 
