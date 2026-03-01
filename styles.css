@@ -255,22 +255,7 @@ nav.scrolled {
     left: 0;
     top: 0;
     content: "\2022";
-}
-
-.summary-list li:first-child {
-    color: var(--accent-purple);
-}
-
-.summary-list li:first-child::before {
-    color: var(--accent-purple);
-}
-
-.summary-list li:last-child {
-    color: var(--accent-blue);
-}
-
-.summary-list li:last-child::before {
-    color: var(--accent-blue);
+    color: inherit;
 }
 
 .social-links {
@@ -394,6 +379,11 @@ nav.scrolled {
 
 .duties strong {
     color: var(--text-main);
+}
+
+.duties .project-item,
+.duties .project-item strong {
+    font-style: italic;
 }
 
 /* --- Cards Grid (Education, Publications) --- */
