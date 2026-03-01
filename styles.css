@@ -459,6 +459,11 @@ nav.scrolled {
     color: var(--accent-purple);
 }
 
+.outline-card .timeline-date {
+    display: inline-block;
+    margin-top: 0.75rem;
+}
+
 /* --- Publications List --- */
 .publications-list {
     display: flex;
