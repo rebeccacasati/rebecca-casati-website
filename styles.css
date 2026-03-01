@@ -291,35 +291,6 @@ nav.scrolled {
     box-shadow: 0 0 10px var(--accent-glow);
 }
 
-.timeline-content {
-    position: relative;
-    padding-left: 110px;
-}
-
-.timeline-logo-container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 90px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.timeline-logo {
-    height: 45px;
-    max-width: 80px;
-    object-fit: contain;
-    opacity: 0.7;
-    transition: opacity var(--transition-normal);
-    filter: brightness(1.1);
-}
-
-.timeline-content:hover .timeline-logo {
-    opacity: 1;
-}
-
 .timeline-header {
     display: flex;
     justify-content: space-between;
@@ -327,6 +298,11 @@ nav.scrolled {
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 0.5rem;
+}
+
+.timeline-header h3 {
+    font-size: 1.3rem;
+    color: #fff;
 }
 
 .timeline-date {
@@ -609,21 +585,6 @@ footer {
     .timeline-header {
         flex-direction: column;
         gap: 0.5rem;
-    }
-    
-    .timeline-content {
-        padding-left: 0;
-    }
-    
-    .timeline-logo-container {
-        position: static;
-        transform: none;
-        margin-bottom: 1rem;
-    }
-    
-    .timeline-logo {
-        height: 35px;
-        max-width: 75px;
     }
     
     .footer-content {
