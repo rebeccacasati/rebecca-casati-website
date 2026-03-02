@@ -890,8 +890,7 @@ footer {
     }
 
     .outline-card .participation-subheader {
-        flex-direction: column;
-        gap: 0.35rem;
+        display: contents;
     }
 
     .outline-card .timeline-header {
@@ -901,14 +900,27 @@ footer {
         gap: 0.75rem;
     }
 
+    .participations-list .outline-card {
+        display: flex;
+        flex-direction: column;
+    }
+
     .outline-card .location {
-        order: 1;
-        width: auto;
-        margin-top: 0;
+        order: 4;
+        width: 100%;
+        margin-top: 0.75rem;
     }
 
     .outline-card .role {
+        order: 1;
+    }
+
+    .outline-card .title {
         order: 2;
+    }
+
+    .outline-card .organizer {
+        order: 3;
     }
     
     .footer-content {
