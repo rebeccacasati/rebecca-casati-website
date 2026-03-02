@@ -472,6 +472,10 @@ nav.scrolled {
     color: var(--text-main);
 }
 
+.card .thesis .thesis-text {
+    font-style: italic;
+}
+
 .outline-card {
     padding: 1.5rem;
 }
